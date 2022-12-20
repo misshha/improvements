@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  background-color: #efe3ff;
+  /* box-sizing: padding-box; */
+}
+
+.App{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.task-list{
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  margin-top: 100px;
+  width: calc(100% - 260px);
+  align-items: center;
+}
+
+.task{
+  width: calc(60% - 22px);
+  height: 28px;
+  background: #F0F0F0;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: rgba(94, 244, 56, 0.7);
+  box-shadow: 1px 1px 5px rgba(94, 244, 56, 0.6);
+  margin-bottom: 10px;
+  padding: 0 10px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task span{
+  font-weight: 500;
+}
+
+.add-btn{
+  width: calc(60% - 4px);
+  height: 28px;
+  outline: 2px solid black;
+  color: black;
+  font-weight: 550;
+  background-color: rgba(0,0,0,0);
+}
+
+.add-btn:hover{
+  border: 0px solid black;
+  color: white;
+  background-color: black;
+}
+
+.form-task{
+  width: calc(60% - 2px);
+  height: 150px;
+  background: #F0F0F0;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: rgba(94, 244, 56, 0.7);
+  box-shadow: 1px 1px 5px rgba(94, 244, 56, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+}
+
+.input-block{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-close{
+  margin-top: 6px;
+  margin-right: 8px;   
+  float: right;
+}
+
+.icon-close:hover{
+  color: rgb(94, 244, 56);
+}
+
+.form-text{
+  height: 30px;
+  width: 100% - 20px; 
+  padding: 0 10px;
+  font-weight: 550;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #454545;
+}
+
+.form-time{
+  height: 30px;
+  width: 35%;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-weight: 550;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #454545;
+}
+
+.form-btn{
+  width: 95px;
+  height: 24px;
+  margin-top: 16px;
+  border: 1px solid #000000;
+}
+
+.form-btn:hover{
+  border: 0;
+  background-color: black;
+  color: white;
+}
+
+.menu{
+  /* position: fixed; */
+  min-height: 100%;
+  width: 260px;
+  background-color: grey;
+}
